@@ -19,6 +19,9 @@ Character.prototype.series = 'GoT';
 class King extends Character {
     constructor(name, family, age, kingYears) {
         super(name, family, age);
+        // this.name = name;
+        // this.family = family;
+        // this.age = age;
         this.kingYears = kingYears;
         this.message = 'Vais a morir todos';
     }
@@ -30,6 +33,9 @@ class Knight extends Character {
         this.weapon = weapon;
         this.skill = skill;
         this.message = 'Primero pego y luego pregunto';
+    }
+    useSword() {
+        console.log('<te pincho');
     }
 }
 
